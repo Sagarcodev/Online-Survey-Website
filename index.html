@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Online Survey</h1>
+        <form id="survey-form">
+            <section>
+                <h2>Section 1: Demographics</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br><br>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+            </section>
+            <section>
+                <h2>Section 2: Preferences</h2>
+                <label for="favorite-color">Favorite Color:</label>
+                <input type="text" id="favorite-color" name="favorite-color"><br><br>
+                <label for="hobbies">Hobbies:</label>
+                <textarea id="hobbies" name="hobbies"></textarea><br><br>
+            </section>
+            <section>
+                <h2>Section 3: Ratings</h2>
+                <label for="rating-1">How would you rate our product?</label>
+                <ul id="rating-1">
+                    <li><input type="radio" name="rating-1" value="1">1 (Poor)</li>
+                    <li><input type="radio" name="rating-1" value="2">2 (Fair)</li>
+                    <li><input type="radio" name="rating-1" value="3">3 (Good)</li>
+                    <li><input type="radio" name="rating-1" value="4">4 (Very Good)</li>
+                    <li><input type="radio" name="rating-1" value="5">5 (Excellent)</li>
+                </ul><br><br>
+                <label for="rating-2">How would you rate our customer service?</label>
+                <ul id="rating-2">
+                    <li><input type="radio" name="rating-2" value="1">1 (Poor)</li>
+                    <li><input type="radio" name="rating-2" value="2">2 (Fair)</li>
+                    <li><input type="radio" name="rating-2" value="3">3 (Good)</li>
+                    <li><input type="radio" name="rating-2" value="4">4 (Very Good)</li>
+                    <li><input type="radio" name="rating-2" value="5">5 (Excellent)</li>
+                </ul><br><br>
+            </section>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
